@@ -1,0 +1,51 @@
+.u-list li,
+a {
+  list-style-type: none;
+  font-family: "Roboto";
+  font-style: Medium;
+  font-size: 14px;
+  color: #212121;
+  text-decoration: none;
+  list-style-type: none;
+}
+.logo {
+  color: #2196f3;
+  font-style: bold;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: "Raleway";
+  padding-left: 215px;
+}
+.link-hover:hover {
+  color: #2196f3;
+}
+
+.section-1 {
+  background-color: rgba(47, 48, 58, 1);
+  height: 600px;
+  text-align: center;
+}
+
+header {
+  display: inline-block;
+}
+
+.button-1 {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: Bold;
+  font-size: 16px;
+  border: #2196f3;
+  filter: drop-shadow(40px 0px 40px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+h1 {
+  color: white;
+  font-family: "Roboto";
+  font-size: 44px;
+  font-style: Black;
+  padding-top: 200px;
+}
