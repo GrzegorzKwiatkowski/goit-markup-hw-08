@@ -14,7 +14,8 @@ a {
   font-size: 26px;
   text-decoration: none;
   font-family: "Raleway";
-  padding-left: 215px;
+  padding: 0px 97px 25px 215px;
+  margin-top: 24px;
 }
 .link-hover:hover {
   color: #2196f3;
@@ -23,14 +24,17 @@ a {
 .section-1 {
   background-color: rgba(47, 48, 58, 1);
   height: 600px;
+  width: 1600px;
   text-align: center;
 }
 
 header {
   display: inline-block;
+  margin-top: 20px;
 }
 
 .button-1 {
+  color: white;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -48,4 +52,40 @@ h1 {
   font-size: 44px;
   font-style: Black;
   padding-top: 200px;
+}
+.test {
+  display: inline;
+}
+
+.port-display {
+  padding-left: 46px;
+  padding-right: 64px;
+}
+.email-display {
+  padding-left: 340px;
+  padding-right: 50px;
+}
+.nav-inline nav,
+ul,
+li {
+  display: inline;
+}
+.box-1 p {
+  width: 270px;
+  height: 70.54px;
+}
+.dis li {
+  display: inline-block;
+}
+ul.font-1 li,
+h3 {
+  font-family: "Roboto";
+  font-style: Bold;
+  font-size: 14px;
+  color: rgba(33, 33, 33, 1);
+  text-transform: uppercase;
+}
+
+.padding-test {
+  padding-top: 90px;
 }
