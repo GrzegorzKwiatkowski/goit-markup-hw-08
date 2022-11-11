@@ -70,14 +70,14 @@ ul,
 li {
   display: inline;
 }
-.box-1 p {
+.box-one {
   width: 270px;
   height: 70.54px;
 }
 .dis li {
   display: inline-block;
 }
-ul.font-1 li,
+.font-head li,
 h3 {
   font-family: "Roboto";
   font-style: Bold;
@@ -86,6 +86,16 @@ h3 {
   text-transform: uppercase;
 }
 
-.padding-test {
+.padding-test ul,
+li {
   padding-top: 90px;
+}
+.font-par h3,
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(117, 117, 117, 1);
 }
