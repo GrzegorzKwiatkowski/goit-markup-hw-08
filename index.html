@@ -20,37 +20,39 @@
     />
   </head>
   <body>
-    <header class="nav-inline">
+    <header class="nav-block">
       <nav>
-        <ul class="u-list">
-          <li><a href="#" class="logo">WebStudio</a></li>
-          <!--pamiętaj o zmianie adresów url do studio, portfolio oraz contacts-->
-          <li><a href="#" class="link-hover">Studio</a></li>
-          <li class="port-display">
-            <a href="portfolio.html" class="link-hover">Portfolio</a>
+        <ul class="nav-style">
+          <!--spróbuj przenieść klase do header-->
+          <li>
+            <a href="#"><l>WebStudio</l></a>
           </li>
-          <li><a href="#" class="link-hover">Contacts</a></li>
+          <li><a href="#" class="hover">Studio</a></li>
+          <li>
+            <a href="portfolio.html" class="hover">Portfolio</a>
+          </li>
+          <li><a href="#" class="hover">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="u-list">
-        <li class="email-display">
-          <a href="mailto:info@devstudio.com" class="link-hover"
+      <ul class="nav-style">
+        <!--spróbuj przenieść klase do header-->
+        <li>
+          <a href="mailto:info@devstudio.com" class="hover"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a href="tel:+1212-772-4150" class="link-hover">+1 212-772-4150</a>
+          <a href="tel:+1212-772-4150" class="hover">+1 212-772-4150</a>
         </li>
       </ul>
     </header>
     <main>
-      <section class="section-1" class="nav-inline">
+      <section class="section-1">
         <h1>EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS</h1>
-        <button type="button" class="button-1">Request our service</button>
+        <button class="bt">Request our service</button>
       </section>
-
-      <section class="font-head" class="font-par">
-        <ul class="grid-box" class="padding-section">
+      <section>
+        <ul class="grid-box">
           <li>
             <h3>ATTENTION TO DETAILS</h3>
             <p>
@@ -82,9 +84,10 @@
         </ul>
       </section>
       <section>
-        <h2 class="head-2">What we do</h2>
-        <div class="grid-box-wwd" class="pading-section">
+        <h2>What we do</h2>
+        <div class="grid-box-v2">
           <img
+            class="item-a"
             src="images/gr1.jpg"
             alt="working place1"
             width="370"
@@ -105,18 +108,19 @@
         </div>
       </section>
       <section class="section-2">
-        <h2 class="head-2">Our Team</h2>
+        <h2>Our Team</h2>
         <div class="grid-team">
-          <figure class="white-box" class="figacaption-to-delete">
+          <figure class="white-box">
             <img
+              class="item-"
               src="images/Christopher_Walker.jpg"
               alt="Christopher Walker"
               width="270"
               height="260"
             />
-            <figcaption class="kutas">
+            <figcaption>
               Christopher Walker
-              <div class="second-font">Product Designer</div>
+              <div>Product Designer</div>
             </figcaption>
           </figure>
           <figure class="white-box">
@@ -128,7 +132,7 @@
             />
             <figcaption>
               Kylie Evans
-              <div class="second-font">Frontend Developer</div>
+              <div>Frontend Developer</div>
             </figcaption>
           </figure>
           <figure class="white-box">
@@ -140,7 +144,7 @@
             />
             <figcaption>
               Ryan Harris
-              <div class="second-font">Marketing</div>
+              <div>Marketing</div>
             </figcaption>
           </figure>
           <figure class="white-box">
@@ -152,19 +156,17 @@
             />
             <figcaption>
               Tyler Moore
-              <div class="second-font">UI Designer</div>
+              <div>UI Designer</div>
             </figcaption>
           </figure>
         </div>
       </section>
     </main>
     <footer>
-      <a
-        href="https://grzegorzkwiatkowski.github.io/goit-markup-hw-01/"
-        class="logo"
+      <a href="https://grzegorzkwiatkowski.github.io/goit-markup-hw-01/"
         >WebStudio</a
       >
-      <address class="line">
+      <address>
         <ul>
           <li>695 Park Ave, New York, NY 10065, United States</li>
           <li>

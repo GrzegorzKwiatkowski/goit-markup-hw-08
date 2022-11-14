@@ -1,39 +1,62 @@
-.u-list li,
-a {
-  list-style-type: none;
+body {
   font-family: "Roboto";
-  font-style: Medium;
+  font-style: normal;
+}
+.nav-style a {
+  font-weight: 500;
   font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
   list-style-type: none;
 }
-.logo {
-  color: #2196f3;
-  font-style: bold;
-  font-size: 26px;
-  text-decoration: none;
+.log {
   font-family: "Raleway";
-  padding: 0px 97px 25px 215px;
-  margin-top: 24px;
-}
-.link-hover:hover {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #2196f3;
 }
-
+.hover:hover {
+  color: #2196f3;
+}
+a l {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.nav-block nav {
+  display: inline;
+}
+.nav-block ul {
+  display: inline;
+}
+.nav-block li {
+  display: inline;
+}
 .section-1 {
   background-color: rgba(47, 48, 58, 1);
   height: 600px;
-
   text-align: center;
 }
-
-header {
-
-  margin-top: 20px;
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 200px;
 }
-
-.button-1 {
+.bt {
   color: white;
   width: 200px;
   height: 50px;
@@ -46,93 +69,58 @@ header {
   filter: drop-shadow(40px 0px 40px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-h1 {
-  color: white;
-  font-family: "Roboto";
-  font-size: 44px;
-  font-style: Black;
-  padding-top: 200px;
-}
-.test {
-  display: inline;
-}
-
-.port-display {
-  padding-left: 46px;
-  padding-right: 64px;
-}
-.email-display {
-  padding-left: 340px;
-  padding-right: 50px;
-}
-nav.nav-inline nav, ul, li {
-  display: inline;
-}
-ul.nav-inline nav, ul, li {
-  display: inline;
-}
-li.nav-inline nav, ul, li {
-  display: inline;
-}
-
-
-
-.font-head li,
 h3 {
   font-family: "Roboto";
-  font-style: Bold;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  color: rgba(33, 33, 33, 1);
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #212121;
 }
-
-.font-par h3,
 p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(117, 117, 117, 1);
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 .grid-box {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
   margin-left: 215px;
   margin-right: 215px;
-  margin-top: 94px;
+  column-gap: 30px;
 }
-.pading-section li,
-h3,
-p {
-  padding-right: 30px;
-}
-.head-2 {
-  font-family: "Roboto";
-  font-style: normal;
+h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 50px;
-  padding-top: 94px;
+  color: #212121;
 }
-.grid-box-wwd {
+.grid-box-v2 {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin-left: 215px;
+  grid-template-columns: 1.15fr 0.9fr 0.9fr 0.9fr 1.15fr;
+  column-gap: 30px;
+}
+.item-a {
+  grid-column-start: 2;
 }
 .section-2 {
-  background-color: rgba(245, 244, 250, 1);
   height: 648px;
+  background: #f5f4fa;
 }
 .grid-team {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  margin-left: 215px;
-  margin-right: 215px;
+  grid-template-columns: repeat(4, 270px);
+  grid-gap: 30px;
+}
+.item-b {
 }
 .white-box {
   background-color: #fff;
@@ -142,36 +130,3 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.figacaption-to-delete img,
-figcaption {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  padding-top: 30px;
-}
-.second-font {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin-top: 10px;
-}
-.kutas {
-  line-height: 30px;
-}
-.line {
-  position: ;
-}
-.grid-box-port {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin-left: 215px;
