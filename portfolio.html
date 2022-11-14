@@ -20,19 +20,27 @@
     />
   </head>
   <body>
-    <header>
+    <header class="nav-inline">
       <nav>
-        <ul>
-          <li><a href="index.html">WebStudio</a></li>
+        <ul class="u-list">
+          <li><a href="index.html" class="logo">WebStudio</a></li>
           <!--pamiętaj o zmianie adresów url do studio, portfolio oraz contacts-->
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#" class="link-hover">Studio</a></li>
+          <li class="port-display">
+            <a href="portfolio.html" class="link-hover">Portfolio</a>
+          </li>
+          <li><a href="#" class="link-hover">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+      <ul class="u-list">
+        <li class="email-display">
+          <a href="mailto:info@devstudio.com" class="link-hover"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+1212-772-4150" class="link-hover">+1 212-772-4150</a>
+        </li>
       </ul>
     </header>
     <main>
@@ -44,7 +52,7 @@
         <button type="button">Marketing</button>
       </section>
       <section>
-        <ul>
+        <ul class="grid-box-port">
           <li>
             <figure>
               <img

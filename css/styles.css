@@ -24,12 +24,12 @@ a {
 .section-1 {
   background-color: rgba(47, 48, 58, 1);
   height: 600px;
-  width: 1600px;
+
   text-align: center;
 }
 
 header {
-  display: inline-block;
+
   margin-top: 20px;
 }
 
@@ -65,11 +65,17 @@ h1 {
   padding-left: 340px;
   padding-right: 50px;
 }
-.nav-inline nav,
-ul,
-li {
+nav.nav-inline nav, ul, li {
   display: inline;
 }
+ul.nav-inline nav, ul, li {
+  display: inline;
+}
+li.nav-inline nav, ul, li {
+  display: inline;
+}
+
+
 
 .font-head li,
 h3 {
@@ -91,8 +97,81 @@ p {
 }
 .grid-box {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
   margin-left: 215px;
   margin-right: 215px;
   margin-top: 94px;
 }
+.pading-section li,
+h3,
+p {
+  padding-right: 30px;
+}
+.head-2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+.grid-box-wwd {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-left: 215px;
+}
+.section-2 {
+  background-color: rgba(245, 244, 250, 1);
+  height: 648px;
+}
+.grid-team {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+.white-box {
+  background-color: #fff;
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.figacaption-to-delete img,
+figcaption {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-top: 30px;
+}
+.second-font {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+}
+.kutas {
+  line-height: 30px;
+}
+.line {
+  position: ;
+}
+.grid-box-port {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-left: 215px;
