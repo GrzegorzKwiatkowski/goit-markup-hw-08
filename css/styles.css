@@ -11,6 +11,13 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
+.nav-style {
+  margin-top: 24px;
+}
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .log {
   font-family: "Raleway";
   font-style: normal;
@@ -31,6 +38,19 @@ a l {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  padding-left: 13.4%;
+  padding-right: 6%;
+}
+a o {
+  padding-left: 3.3%;
+  padding-right: 4.3%;
+}
+a m {
+  padding-left: 21%;
+  padding-right: 3.1%;
+}
+a t {
+  color: rgba(117, 117, 117, 1);
 }
 .nav-block nav {
   display: inline;
@@ -94,6 +114,8 @@ p {
   margin-left: 215px;
   margin-right: 215px;
   column-gap: 30px;
+  justify-content: center;
+  margin-top: 94px;
 }
 h2 {
   font-weight: 700;
@@ -102,6 +124,8 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 .grid-box-v2 {
   display: grid;
@@ -109,11 +133,10 @@ h2 {
   gap: 30px;
   justify-content: center;
 }
-
-}
 .section-2 {
   height: 648px;
   background: #f5f4fa;
+  margin-top: 94px;
 }
 .grid-team {
   display: grid;
@@ -134,4 +157,36 @@ h2 {
 figure > img {
   width: 100%;
   height: 260px;
+}
+footer {
+  background-color: #2f303a;
+  height: 252px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 60px;
+}
+.address-style a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.address-style li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.a-style a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+address {
+  padding-left: 13.4%;
 }
