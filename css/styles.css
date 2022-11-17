@@ -4,12 +4,8 @@ body {
 }
 :root {
   --main-color: #2196f3;
-}
-:root {
-  --background-color: rgba(47, 48, 58, 1);
-}
-:root {
   --second-font-color: rgba(117, 117, 117, 1);
+  --background-color: rgba(47, 48, 58, 1);
 }
 
 .line hr {
@@ -89,6 +85,7 @@ body {
 }
 .button-style {
   color: white;
+  font-weight: 700;
   width: 200px;
   height: 50px;
   background-color: var(--main-color);
@@ -96,6 +93,7 @@ body {
   font-size: 16px;
   border: var(--main-color);
   border-radius: 4px;
+  cursor: pointer;
 }
 .grid-box {
   display: grid;
