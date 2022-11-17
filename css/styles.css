@@ -5,6 +5,13 @@ body {
 :root {
   --main-color: #2196f3;
 }
+:root {
+  --background-color: rgba(47, 48, 58, 1);
+}
+:root {
+  --second-font-color: rgba(117, 117, 117, 1);
+}
+
 .line hr {
   border: 1px solid #ececec;
   margin-top: 30px;
@@ -30,7 +37,7 @@ body {
   margin-top: 24px;
 }
 .hover:hover {
-  color: #2196f3;
+  color: var(--main-color);
 }
 .logo a {
   font-family: "Raleway";
@@ -43,7 +50,7 @@ body {
   color: var(--main-color);
 }
 .font-color {
-  color: rgba(117, 117, 117, 1);
+  color: var(--second-font-color);
 }
 .padding-portfolio {
   padding-left: 3.3%;
@@ -54,7 +61,7 @@ body {
   padding-right: 3.1%;
 }
 .head-section-style {
-  background-color: rgba(47, 48, 58, 1);
+  background-color: var(--background-color);
   height: 600px;
   text-align: center;
 }
@@ -143,11 +150,11 @@ body {
   text-align: center;
 }
 .font-style-1 div {
-  color: #757575;
+  color: var(--second-font-color);
   padding-top: 10px;
 }
 .footer-background {
-  background-color: #2f303a;
+  background-color: var(--background-color);
   height: 252px;
   font-size: 14px;
   line-height: 1.71;
@@ -248,5 +255,5 @@ body {
 }
 .figcaption-padding div {
   margin-top: 13px;
-  color: #757575;
+  color: var(--second-font-color);
 }
