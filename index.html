@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header class="nav-block nav-style">
+    <header class="nav-block nav-style container">
       <nav>
         <ul>
           <li class="logo">
@@ -35,12 +35,12 @@
         </ul>
       </nav>
       <ul>
-        <li class="padding-mail">
+        <li>
           <a href="mailto:info@devstudio.com"
             ><span class="font-color hover">info@devstudio.com</span></a
           >
         </li>
-        <li>
+        <li class="padding-tel">
           <a href="tel:+1212-772-4150"
             ><span class="font-color hover">+1 212-772-4150</span></a
           >
@@ -53,7 +53,7 @@
         <button class="button-style">Request our service</button>
       </section>
       <section class="info-section-style">
-        <ul class="grid-box">
+        <ul class="container">
           <li>
             <h3>ATTENTION TO DETAILS</h3>
             <p>
@@ -86,7 +86,7 @@
       </section>
       <section class="about-us-style">
         <h2>What we do</h2>
-        <div class="grid-box-about-us">
+        <div class="container">
           <img
             src="images/gr1.jpg"
             alt="working place1"
@@ -107,9 +107,9 @@
           />
         </div>
       </section>
-      <section class="about-us-style section-background img-size">
+      <section class="section-background img-size">
         <h2>Our Team</h2>
-        <div class="grid-team font-style-3">
+        <div class="container">
           <figure class="white-box">
             <img src="images/christopher_walker.jpg" alt="Christopher Walker" />
             <figcaption class="font-style-1">
@@ -142,27 +142,29 @@
       </section>
     </main>
     <footer class="footer-background footer-style">
-      <ul>
-        <li class="logo">
-          <a href="#">WebStudio</a>
-        </li>
-      </ul>
-      <address class="address-padding">
-        <ul class="address-style">
-          <li>
-            695 Park Ave, New York, NY 10065,<br />
-            United States
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="hover"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+1212-772-4150" class="hover">+1 212-772-4150</a>
+      <div class="container-footer">
+        <ul>
+          <li class="logo">
+            <a href="#">WebStudio</a>
           </li>
         </ul>
-      </address>
+        <address class="address-padding">
+          <ul class="address-style">
+            <li>
+              695 Park Ave, New York, NY 10065,<br />
+              United States
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="hover"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1212-772-4150" class="hover">+1 212-772-4150</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
