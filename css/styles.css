@@ -78,6 +78,10 @@ p {
 .hover:hover {
   color: var(--main-color);
 }
+.button-hover:hover {
+  background-color: var(--main-color);
+  color: white;
+}
 .logo a {
   font-family: "Raleway";
   font-weight: 700;
