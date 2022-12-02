@@ -125,6 +125,7 @@ p {
   text-align: center;
 }
 .background-position {
+  display: block;
   text-align: -webkit-center;
 }
 .head-section-style h1 {
