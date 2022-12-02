@@ -104,7 +104,13 @@ p {
   color: var(--second-font-color);
 }
 .head-section-style {
-  background-color: var(--background-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
   text-align: center;
 }
 .head-section-style h1 {
