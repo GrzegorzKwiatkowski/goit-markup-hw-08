@@ -361,6 +361,7 @@ h2 {
   padding: 12px 12px 12px 12px;
   fill: rgba(175, 177, 184, 1);
   cursor: pointer;
+  line-height: 0;
 }
 .app-icons:hover {
   background-color: var(--main-color);
