@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="stylesheet" href="css/modern-normalize.min.css" />
     <link href="css/styles.css" rel="stylesheet " />
     <link href="images/icons.svg" rel="stylesheet" />
@@ -299,7 +299,8 @@
           <li class="logo">
             <a href="#">Web<span class="footer-logo-color">Studio</span></a>
           </li>
-          <li><p class="find-us-style">find us on</p></li>
+          <li><p class="find-us-style">Dołącz do nas</p></li>
+          <li><p class="sub-style">Zapisz się do newslettera</p></li>
         </ul>
         <address class="address-padding">
           <ul class="address-style">
@@ -327,6 +328,24 @@
                   </svg>
                 </div>
               </li>
+              <li>
+                <form>
+                  <label class="sub-email-position">
+                    <input
+                      class="sub-email-input"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                </form>
+              </li>
+              <li class="hnn">
+                <button class="sub-button" type="submit">Zapisz się</button>
+                <svg width="24" height="24" class="send-icon">
+                  <use href="/images/icons.svg#icon-send"></use>
+                </svg>
+              </li>
             </div>
             <li>
               <a href="mailto:info@devstudio.com" class="hover"
@@ -342,6 +361,64 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h2 class="modal-heading">
+          Leave your information and we'll call you back
+        </h2>
+        <form>
+          <label class="label-style"
+            >Name
+            <div class="input-styling">
+              <svg class="svg-name-position" width="18" height="18">
+                <use href="/images/icons.svg#icon-person"></use>
+              </svg>
+              <input class="input-style" type="name" name="name" />
+            </div>
+          </label>
+          <label class="label-style"
+            >Telephone
+            <div class="input-styling">
+              <svg class="svg-tel-position" width="18" height="18">
+                <use href="/images/icons.svg#icon-phone"></use>
+              </svg>
+              <input class="input-style" type="tel" name="telephone" />
+            </div>
+          </label>
+          <label class="label-style"
+            >Email
+            <div class="input-styling">
+              <svg class="svg-email-position" width="18" height="18">
+                <use href="/images/icons.svg#icon-mail"></use>
+              </svg>
+              <input class="input-style" type="email" name="email" />
+            </div>
+          </label>
+          <label class="comments-style"
+            >Comments
+            <textarea
+              class="textarea-style"
+              name="comments"
+              rows="5"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <label class="checkbox-style">
+            <input
+              class="checkbox-box-style"
+              type="checkbox"
+              name="regulamin"
+              value="regulamin"
+            /><svg class="svg-check-position" width="16" height="15">
+              <use href="/images/icons.svg#icon-check"></use>
+            </svg>
+            Oświadczam iż akceptuję&nbsp;<a class="link-style" href=""
+              >Regulamin</a
+            >&nbsp;i&nbsp;
+            <a class="link-style" href="">Politykę Prywatności.</a></label
+          >
+          <div class="button-position">
+            <button class="button-send-style" type="submit">Send</button>
+          </div>
+        </form>
         <button class="modal-btn-close" data-modal-close>
           <svg width="11" height="11">
             <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
