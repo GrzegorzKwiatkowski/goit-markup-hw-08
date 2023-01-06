@@ -3,6 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --main-color: #2196f3;
+  --second-font-color: rgba(117, 117, 117, 1);
+  --background-color: rgba(47, 48, 58, 1);
+  --transform-color: #064a81;
+}
 body {
   font-family: "Roboto", "sans-serif";
   color: #212121;
@@ -24,17 +30,14 @@ h3 {
 p {
   margin: 0;
 }
-:root {
-  --main-color: #2196f3;
-  --second-font-color: rgba(117, 117, 117, 1);
-  --background-color: rgba(47, 48, 58, 1);
-}
 .container {
   width: 1200px;
   display: flex;
   flex-direction: row;
   margin: auto;
   gap: 30px;
+  padding-right: 30px;
+  list-style: none;
 }
 .container-footer {
   width: 1200px;
@@ -74,34 +77,6 @@ p {
 .line hr {
   border: 1px solid #ececec;
   margin: 0;
-}
-.hover:hover {
-  color: var(--main-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hover:focus {
-  color: var(--main-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-hover:hover {
-  background-color: var(--main-color);
-  color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-hover:focus {
-  background-color: var(--main-color);
-  color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo a {
   font-family: "Raleway";
@@ -163,6 +138,8 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 106px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-section-style ul {
   list-style: none;
@@ -310,6 +287,10 @@ h2 {
 .img-wrap li {
   width: 370px;
 }
+.disp {
+  display: block;
+  text-align: -webkit-match-parent;
+}
 .figcaption-padding div {
   padding-top: 13px;
   color: var(--second-font-color);
@@ -343,29 +324,32 @@ h2 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-svg {
   padding-right: 10px;
 }
-
+.e-mail-svg {
+  position: relative;
+  right: 10px;
+}
+.smartphone-svg {
+  right: 10px;
+  position: relative;
+  top: 2px;
+}
 .nav-icon {
   fill: rgba(117, 117, 117, 1);
   color: var(--second-font-color);
   cursor: pointer;
-}
-.nav-icon:hover {
-  fill: var(--main-color);
-  color: var(--main-color);
-  transition: transform 250ms;
+  transition-property: fill, color;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-icon:active,
+.nav-icon:hover,
 .nav-icon:focus-within {
   fill: var(--main-color);
   color: var(--main-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-icon-background {
   width: 270px;
@@ -383,36 +367,35 @@ h2 {
   fill: rgba(175, 177, 184, 1);
   cursor: pointer;
   line-height: 0;
+  transition-property: fill, var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.app-icons:hover {
+.app-icons:hover,
+.app-icons:focus,
+.app-icons:active {
   background-color: var(--main-color);
   border-radius: 50%;
   fill: white;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icons {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: inline-block;
   text-align: center;
-  padding: 16px 32px 16px 32px;
+  padding: 16px 31px 16px 31px;
   fill: rgba(175, 177, 184, 1);
   cursor: pointer;
-}
-.company-icons:hover {
-  fill: var(--main-color);
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
-  transition: transform 250ms;
+  transition-property: fill;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.company-icons:hover,
+.company-icons:active,
 .company-icons:focus {
   fill: var(--main-color);
   color: var(--main-color);
   border: 1px solid var(--main-color);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .find-us-placement {
   display: flex;
@@ -442,22 +425,19 @@ h2 {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   line-height: 0;
-  margin-right: 10px;
+  margin-right: 8px;
+  transition-property: fill, var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.find-us-app-icons:hover {
+.find-us-app-icons:hover,
+.find-us-app-icons:focus,
+.find-us-app-icons:active {
   background-color: var(--main-color);
   border-radius: 50%;
   fill: white;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.find-us-app-icons:focus {
-  background-color: var(--main-color);
-  border-radius: 50%;
-  fill: white;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
@@ -473,27 +453,24 @@ h2 {
 .overlay-hover:hover .overlay {
   transform: translatey(0);
   cursor: pointer;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-hover:hover .img-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .box-overlay {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 .overlay {
   position: relative;
-  top: 0;
+  bottom: -2px;
   left: 0;
   transform: translatey(+100%);
   transition: transform 250ms;
@@ -506,8 +483,8 @@ h2 {
   letter-spacing: 0.03em;
   opacity: 0.9;
   width: 100%;
-  height: 294px;
   padding: 49px 45px 49px 24px;
+  height: 297px;
 }
 .text-about-us {
   position: absolute;
@@ -526,6 +503,7 @@ h2 {
 }
 .img-position {
   position: relative;
+  list-style: none;
 }
 .is-hidden {
   visibility: hidden;
@@ -591,6 +569,9 @@ h2 {
   display: block;
   margin-bottom: 10px;
   margin-top: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-style {
   font-size: 12px;
@@ -600,15 +581,7 @@ h2 {
   text-align: -webkit-center;
   padding-left: 40px;
 }
-.checkbox-style {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--second-font-color);
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
+
 .button-send-style {
   color: white;
   font-weight: 700;
@@ -623,6 +596,13 @@ h2 {
   padding: 10px 76px 10px 76px;
   margin-bottom: 40px;
   margin-top: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send-style:hover,
+.button-send-style:focus,
+.button-send-style:active {
+  background-color: var(--transform-color);
 }
 .button-position {
   display: flex;
@@ -632,45 +612,53 @@ h2 {
   color: var(--main-color);
 }
 .input-styling:hover input {
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--main-color);
+  fill: var(--main-color);
 }
 .input-styling:hover svg {
   fill: var(--main-color);
   outline: none;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-styling:focus-within svg {
   fill: var(--main-color);
   outline: none;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-styling:focus-within input {
   border: 1px solid var(--main-color);
   outline: none;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-styling {
   display: inline;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gone {
+  position: absolute;
 }
 .svg-name-position {
   position: relative;
   top: 37px;
   right: 22px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-tel-position {
   position: relative;
   top: 37px;
-  right: 48px;
+  right: 46px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-email-position {
   position: relative;
   top: 37px;
   right: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-style {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -678,13 +666,19 @@ h2 {
   margin-top: 4px;
   padding: 12px 16px 12px 16px;
   width: 448px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-style:hover,
 .textarea-style:focus {
   border: 1px solid var(--main-color);
   outline: none;
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comments-style {
   font-size: 12px;
@@ -694,21 +688,38 @@ h2 {
   padding-left: 40px;
   display: inline-grid;
 }
-.checkbox-box-style {
-  margin-right: 7px;
-}
-.svg-check-position {
-  opacity: 0;
-  position: relative;
-  top: 4px;
-  right: 22px;
-  cursor: pointer;
-}
+
 .checkbox-box-style:checked + .svg-check-position {
   opacity: 1;
 }
+.checkbox-box-style {
+  accent-color: white;
+}
+.checkbox-style {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+.svg-check-position {
+  opacity: 0;
+  position: absolute;
+  left: 56px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  border-radius: 2px;
+}
+.terms-style {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-left: 8px;
+}
 .sub-style {
-  padding-left: 180px;
+  padding-left: 173px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -728,7 +739,7 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 .sub-email-position {
-  padding-left: 66px;
+  padding-left: 64px;
   padding-right: 12px;
 }
 .sub-button {
@@ -743,9 +754,46 @@ h2 {
   line-height: 1.87;
   color: #fff;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub-button:hover,
+.sub-button:focus,
+.sub-button:active {
+  background-color: var(--transform-color);
 }
 .send-icon {
   position: absolute;
   margin-left: -50px;
   margin-top: 12px;
+}
+.button-style:hover,
+.button-style:focus,
+.button-style:active {
+  background-color: var(--transform-color);
+}
+.hover {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover:hover,
+.hover:focus,
+.hover:active {
+  color: var(--main-color);
+}
+.button-hover {
+  transition-property: var(--background-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-hover:hover,
+.button-hover:focus,
+.button-hover:active {
+  background-color: var(--main-color);
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
