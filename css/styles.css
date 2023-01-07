@@ -695,6 +695,9 @@ h2 {
 .checkbox-box-style {
   accent-color: white;
 }
+.checkbox-btn {
+  display: flex;
+}
 .checkbox-style {
   display: flex;
   place-items: center;
@@ -705,10 +708,11 @@ h2 {
 .svg-check-position {
   opacity: 0;
   position: absolute;
-  left: 56px;
+  left: 55px;
   cursor: pointer;
   background-color: var(--main-color);
   border-radius: 2px;
+  margin-top: 4px;
 }
 .terms-style {
   font-weight: 400;
