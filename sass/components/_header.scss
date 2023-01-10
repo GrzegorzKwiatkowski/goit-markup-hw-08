@@ -1,0 +1,115 @@
+.header {
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 1200px;
+  padding-right: 30px;
+  & ul {
+    display: flex;
+    align-items: center;
+  }
+  &__list-style {
+    list-style-type: none;
+    font-family: $fontFamily-roboto;
+  }
+}
+.navigation {
+  & a {
+    font-weight: $fontWeight-normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-main;
+      transition-property: color;
+      transition-duration: $transitionDuration-default;
+      transition-timing-function: $transitionTiming-default;
+    }
+  }
+  &__underline-studio {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 4px;
+      top: 44px;
+      left: 0px;
+      background: $color-main;
+      border-radius: 2px;
+    }
+  }
+  &__underline-portfolio {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 57px;
+      height: 4px;
+      top: 44px;
+      left: 0px;
+      background: $color-main;
+      border-radius: 2px;
+    }
+  }
+  &__inside-padding {
+    padding-left: 57px;
+    padding-right: 69px;
+  }
+}
+
+.logo {
+  &__color {
+    color: black;
+  }
+  & a {
+    font-family: $fontFamily-raleway;
+    font-weight: $fontWeight-big;
+    color: $color-main;
+    font-size: 1.625rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.03em;
+    padding-right: 97px;
+  }
+}
+.contacts {
+  fill: $color-second-font;
+  color: $color-second-font;
+  cursor: pointer;
+  transition-property: fill, color;
+  transition-duration: $transitionDuration-default;
+  transition-timing-function: $transitionTiming-default;
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $color-main;
+    color: $color-main;
+  }
+  &__phone-svg {
+    right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  &__e-mail-svg {
+    position: relative;
+    right: 10px;
+  }
+  &__inside-padding {
+    padding-left: 50px;
+  }
+}
+.navigation-line hr {
+  border: 1px solid $color-header-underline;
+  margin: 0;
+  position: relative;
+  bottom: 1px;
+  z-index: -1;
+}

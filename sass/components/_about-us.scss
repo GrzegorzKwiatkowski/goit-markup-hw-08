@@ -1,0 +1,35 @@
+.about-us {
+  padding-bottom: 94px;
+  width: $width-container;
+  margin: auto;
+  & h2 {
+    font-weight: $fontWeight-big;
+    font-family: $fontFamily-roboto;
+    font-size: 2.25rem;
+    line-height: 2.62rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  &__display {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    list-style: none;
+  }
+  &__overlay {
+    position: absolute;
+    background-color: $color-background-v2;
+    width: 370px;
+    overflow: hidden;
+    color: $color-neutral;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    font-weight: $fontWeight-big;
+    font-family: $fontFamily-roboto;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    top: 224px;
+  }
+}

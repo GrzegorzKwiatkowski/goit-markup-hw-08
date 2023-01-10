@@ -1,0 +1,30 @@
+.background {
+  display: flex;
+  justify-content: center;
+  &__gradient {
+    width: 1600px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &__h1 {
+    font-family: $fontFamily-roboto;
+    font-weight: $fontWeight-huge;
+    color: $color-neutral;
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 106px;
+    padding-bottom: 30px;
+  }
+}
