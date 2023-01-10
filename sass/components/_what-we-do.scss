@@ -7,8 +7,10 @@
     font-family: $fontFamily-roboto;
     font-size: 2.25rem;
     line-height: 2.62rem;
+    padding-bottom: 50px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: auto;
   }
   &__display {
     display: flex;
