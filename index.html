@@ -55,11 +55,11 @@
       </ul>
     </header>
     <div class="mobile-list">
-      <li class="logo logo--padding menu-toggle">
+      <li class="logo logo--padding menu-container__toggle">
         <a href="#">Web<span class="logo__color">Studio</span></a>
       </li>
       <button
-        class="menu-toggle js-open-menu"
+        class="menu-container__toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
@@ -335,7 +335,6 @@
       </section>
     </main>
     <footer class="footer">
-      <!--<div class="footer__container">-->
       <ul class="footer__join-us">
         <li class="logo">
           <a href="#">Web<span class="footer__logo-color">Studio</span></a>
@@ -343,7 +342,6 @@
       </ul>
       <address>
         <ul class="footer__address">
-          <!--<div class="footer__display">-->
           <li class="footer__padding">m. Warszawa, Aleje Jerozolimskie 21</li>
           <li class="footer__padding">
             <a href="mailto:info@devstudio.com" class="navigation__hfa"
@@ -355,57 +353,56 @@
               >+1 212-772-4150</a
             >
           </li>
-          <li><p class="footer__join-us__style">Dołącz do nas</p></li>
-          <li class="find-us-icons">
-            <div class="find-us-icons__style">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-instagram"></use>
-              </svg>
-            </div>
-            <div class="find-us-icons__style">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-twitter"></use>
-              </svg>
-            </div>
-            <div class="find-us-icons__style">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-facebook"></use>
-              </svg>
-            </div>
-            <div class="find-us-icons__style">
-              <svg width="20" height="20">
-                <use href="images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <p class="footer__join-us__style footer__join-us__style--padding">
-              Zapisz się do newslettera
-            </p>
-          </li>
-          <li>
-            <form class="footer__imput">
-              <label
-                ><!-- class="footer__email-input"-->
-                <input
-                  class="footer__email-style"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </label>
-            </form>
-          </li>
-          <li>
-            <button class="main-button" type="submit">Zapisz się</button>
-            <svg width="24" height="24" class="main-button__svg-send">
-              <use href="images/icons.svg#icon-send"></use>
-            </svg>
-          </li>
-          <!--</div>-->
         </ul>
       </address>
-      <!--</div>-->
+      <ul>
+        <li><p class="footer__join-us__style">Dołącz do nas</p></li>
+        <li class="find-us-icons">
+          <div class="find-us-icons__style">
+            <svg width="20" height="20">
+              <use href="images/icons.svg#icon-instagram"></use>
+            </svg>
+          </div>
+          <div class="find-us-icons__style">
+            <svg width="20" height="20">
+              <use href="images/icons.svg#icon-twitter"></use>
+            </svg>
+          </div>
+          <div class="find-us-icons__style">
+            <svg width="20" height="20">
+              <use href="images/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
+          <div class="find-us-icons__style">
+            <svg width="20" height="20">
+              <use href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </div>
+        </li>
+        <li>
+          <p class="footer__join-us__style footer__join-us__style--padding">
+            Zapisz się do newslettera
+          </p>
+        </li>
+        <li>
+          <form class="footer__imput">
+            <label>
+              <input
+                class="footer__email-style"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+        </li>
+        <li>
+          <button class="main-button" type="submit">Zapisz się</button>
+          <svg width="24" height="24" class="main-button__svg-send">
+            <use href="images/icons.svg#icon-send"></use>
+          </svg>
+        </li>
+      </ul>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -486,7 +483,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-container__toggle js-close-menu">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -520,15 +517,15 @@
       </ul>
       <ul class="mobile-list__socialmedia">
         <li>
-          <a class="mobile-list__border" href="">Instagram</a>
+          <a class="mobile-list__border mobile-list__border--no-padding" href=""
+            >Instagram</a
+          >
         </li>
         <li>
           <a class="mobile-list__border" href="">Twitter</a>
         </li>
         <li>
-          <a class="mobile-list__border mobile-list__border--padding" href=""
-            >Facebook</a
-          >
+          <a class="mobile-list__border" href="">Facebook</a>
         </li>
         <li>
           <a class="mobile-list__border mobile-list__border--padding" href=""

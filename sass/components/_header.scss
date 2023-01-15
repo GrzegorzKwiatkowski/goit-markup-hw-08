@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   margin: auto;
-  width: 1200px;
+  /*width: 1200px;*/
   padding-right: 30px;
   & ul {
     display: flex;
@@ -110,8 +110,29 @@
   bottom: 1px;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .header {
     display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .logo {
+    padding-right: 10.8%;
+    padding-left: 1.9%;
+  }
+  .logo a {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .navigation__inside-padding {
+    padding-right: 13%;
+    padding-left: 13%;
+  }
+  .navigation.header__list-style {
+    display: block;
+  }
+  .contacts__inside-padding {
+    padding-left: 0px;
+    padding-right: 1.9%;
   }
 }

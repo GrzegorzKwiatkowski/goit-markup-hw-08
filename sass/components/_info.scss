@@ -46,3 +46,9 @@
     margin-bottom: 30px;
   }
 }
+@media (min-width: 480px) {
+  .info-section__list-style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
