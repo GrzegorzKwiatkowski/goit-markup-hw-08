@@ -74,7 +74,7 @@
     font-size: 1.625rem;
     line-height: 1.9rem;
     letter-spacing: 0.03em;
-    padding-right: 97px;
+    /*padding-right: 97px;*/
   }
 }
 .contacts {
@@ -109,4 +109,9 @@
   position: relative;
   bottom: 1px;
   z-index: -1;
+}
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
 }

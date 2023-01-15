@@ -1,13 +1,15 @@
 .our-team {
   background: $color-svg-bg;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__container {
-    width: $width-container;
+    /*width: $width-container;*/
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     gap: 30px;
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     list-style: none;
   }
   &__heading {

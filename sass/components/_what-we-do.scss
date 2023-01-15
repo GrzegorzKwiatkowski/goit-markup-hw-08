@@ -1,7 +1,9 @@
 .about-us {
+  display: none;
   padding-bottom: 94px;
   width: $width-container;
   margin: auto;
+
   & h2 {
     font-weight: $fontWeight-big;
     font-family: $fontFamily-roboto;
@@ -14,14 +16,16 @@
   }
   &__display {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     position: relative;
     list-style: none;
+    justify-content: center;
   }
   &__overlay {
-    position: absolute;
+    position: relative;
     background-color: $color-background-v2;
-    width: 370px;
+    bottom: 73px;
     overflow: hidden;
     color: $color-neutral;
     text-align: center;
@@ -32,6 +36,5 @@
     font-family: $fontFamily-roboto;
     font-size: 0.875rem;
     line-height: 1rem;
-    top: 224px;
   }
 }

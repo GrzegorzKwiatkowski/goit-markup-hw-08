@@ -1,8 +1,11 @@
 .info-section {
-  width: $width-container;
   margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*
   padding-top: 94px;
   padding-bottom: 94px;
+  */
   & h3 {
     font-size: 0.875rem;
     line-height: 1rem;
@@ -19,12 +22,21 @@
   }
   &__list-style {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    padding-right: 30px;
+    padding-right: 0px;
     list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    & li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__svg-background {
-    width: 270px;
+    width: 100%;
     background-color: $color-svg-bg;
     display: inline-block;
     text-align: center;

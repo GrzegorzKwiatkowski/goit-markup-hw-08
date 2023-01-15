@@ -6,6 +6,7 @@
   color: $color-neutral;
   padding-top: 60px;
   padding-bottom: 60px;
+
   & a {
     text-decoration: none;
   }
@@ -15,12 +16,17 @@
     font-style: normal;
   }
   &__container {
-    width: $width-container;
+    /*width: $width-container;*/
     margin: auto;
+  }
+  &__padding {
+    padding-bottom: 8px;
   }
   &__join-us {
     font-family: $fontFamily-roboto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
     padding-bottom: 20px;
     color: $color-neutral;
@@ -30,26 +36,40 @@
       line-height: 1rem;
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      padding-left: 74px;
+      padding-top: 60px;
+      padding-bottom: 20px;
+      /*padding-left: 74px;
       &--padding {
         padding-left: 173px;
-      }
+      }*/
     }
   }
   &__logo-color {
     color: $color-neutral;
   }
-  &__address a {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.03em;
-    color: $color-adress;
-  }
+  &__address {
+    & li {
+      display: flex;
+      justify-content: center;
+    }
+    & a {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.03em;
+      color: $color-adress;
+    }
+  } /*
   &__display {
     display: flex;
+  }*/
+  &__imput {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
   }
   &__email-style {
-    width: 358px;
+    width: 100%;
     border: 1px solid $color-adress-v2;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -66,7 +86,6 @@
   }
 }
 .find-us-icons {
-  padding-left: 82px;
   &__style {
     display: inline-block;
     padding: 12px 12px 12px 12px;
