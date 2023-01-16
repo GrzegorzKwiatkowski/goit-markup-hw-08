@@ -19,7 +19,7 @@
     <header class="header">
       <nav class="navigation">
         <ul class="header__list-style">
-          <li class="logo">
+          <li class="logo logo__padding">
             <a href="#">Web<span class="logo__color">Studio</span></a>
           </li>
           <li>
@@ -335,74 +335,90 @@
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__join-us">
-        <li class="logo">
-          <a href="#">Web<span class="footer__logo-color">Studio</span></a>
-        </li>
-      </ul>
-      <address>
-        <ul class="footer__address">
-          <li class="footer__padding">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li class="footer__padding">
-            <a href="mailto:info@devstudio.com" class="navigation__hfa"
-              >info@devstudio.com</a
-            >
+      <div class="footer__grid">
+        <div>
+          <ul class="footer__join-us">
+            <li class="logo">
+              <a href="#">Web<span class="footer__logo-color">Studio</span></a>
+            </li>
+          </ul>
+          <address>
+            <ul class="footer__address">
+              <li class="footer__padding">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="footer__padding">
+                <a href="mailto:info@devstudio.com" class="navigation__hfa"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+1212-772-4150" class="navigation__hfa"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p class="footer__join-us__style footer__join-us__style--padding">
+                Dołącz do nas
+              </p>
+            </li>
+            <li class="find-us-icons">
+              <div class="find-us-icons__style">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="find-us-icons__style">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="find-us-icons__style">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="find-us-icons__style">
+                <svg width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__news">
+        <ul>
+          <li>
+            <p class="footer__join-us__style">Zapisz się do newslettera</p>
           </li>
           <li>
-            <a href="tel:+1212-772-4150" class="navigation__hfa"
-              >+1 212-772-4150</a
-            >
+            <form class="footer__imput">
+              <label>
+                <input
+                  class="footer__email-style"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
           </li>
         </ul>
-      </address>
-      <ul>
-        <li><p class="footer__join-us__style">Dołącz do nas</p></li>
-        <li class="find-us-icons">
-          <div class="find-us-icons__style">
-            <svg width="20" height="20">
-              <use href="images/icons.svg#icon-instagram"></use>
+        <ul>
+          <li class="find-us-icons find-us-icon--padding">
+            <button class="main-button" type="submit">Zapisz się</button>
+            <svg width="24" height="24" class="main-button__svg-send">
+              <use href="images/icons.svg#icon-send"></use>
             </svg>
-          </div>
-          <div class="find-us-icons__style">
-            <svg width="20" height="20">
-              <use href="images/icons.svg#icon-twitter"></use>
-            </svg>
-          </div>
-          <div class="find-us-icons__style">
-            <svg width="20" height="20">
-              <use href="images/icons.svg#icon-facebook"></use>
-            </svg>
-          </div>
-          <div class="find-us-icons__style">
-            <svg width="20" height="20">
-              <use href="images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </div>
-        </li>
-        <li>
-          <p class="footer__join-us__style footer__join-us__style--padding">
-            Zapisz się do newslettera
-          </p>
-        </li>
-        <li>
-          <form class="footer__imput">
-            <label>
-              <input
-                class="footer__email-style"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-          </form>
-        </li>
-        <li>
-          <button class="main-button" type="submit">Zapisz się</button>
-          <svg width="24" height="24" class="main-button__svg-send">
-            <use href="images/icons.svg#icon-send"></use>
-          </svg>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

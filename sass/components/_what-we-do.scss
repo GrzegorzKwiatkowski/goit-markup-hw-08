@@ -1,7 +1,7 @@
 .about-us {
   display: none;
+  visibility: hidden;
   padding-bottom: 94px;
-  width: $width-container;
   margin: auto;
 
   & h2 {
@@ -16,11 +16,9 @@
   }
   &__display {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     position: relative;
     list-style: none;
-    justify-content: center;
   }
   &__overlay {
     position: relative;
@@ -36,5 +34,13 @@
     font-family: $fontFamily-roboto;
     font-size: 0.875rem;
     line-height: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .about-us {
+    visibility: visible;
+  }
+  .about-us__display {
+    justify-content: center;
   }
 }

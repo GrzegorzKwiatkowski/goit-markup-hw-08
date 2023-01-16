@@ -43,3 +43,16 @@
     border: 1px solid $color-main;
   }
 }
+
+@media (min-width: 480px) {
+  .companies__display {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .companies__display {
+    grid-template-columns: repeat(6, 1fr);
+    padding-right: 13.41%;
+    padding-left: 13.41%;
+  }
+}

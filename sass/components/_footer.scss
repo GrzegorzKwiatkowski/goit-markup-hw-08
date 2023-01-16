@@ -6,7 +6,6 @@
   color: $color-neutral;
   padding-top: 60px;
   padding-bottom: 60px;
-
   & a {
     text-decoration: none;
   }
@@ -38,10 +37,7 @@
       text-transform: uppercase;
       padding-top: 60px;
       padding-bottom: 20px;
-      /*padding-left: 74px;
-      &--padding {
-        padding-left: 173px;
-      }*/
+      text-align: center;
     }
   }
   &__logo-color {
@@ -86,6 +82,7 @@
   }
 }
 .find-us-icons {
+  text-align: center;
   &__style {
     display: inline-block;
     padding: 12px 12px 12px 12px;
@@ -104,5 +101,50 @@
       background-color: $color-main;
       border-radius: 50%;
     }
+  }
+}
+@media (min-width: 480px) {
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__join-us__style--padding {
+    padding-top: 0px;
+  }
+  .footer__imput {
+    padding-left: 21.6%;
+    padding-right: 21.6%;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 13.41%;
+    padding-left: 13.41%;
+  }
+  .footer__join-us {
+    justify-content: left;
+  }
+  .footer__join-us__style {
+    padding-top: 0px;
+    text-align: left;
+  }
+  .footer__news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .find-us-icons {
+    text-align: left;
+  }
+  .find-us-icon--padding {
+    padding-top: 30px;
+    padding-left: 12px;
+  }
+  .footer__imput {
+    padding: 0px;
+  }
+  .footer__address li {
+    justify-content: left;
   }
 }

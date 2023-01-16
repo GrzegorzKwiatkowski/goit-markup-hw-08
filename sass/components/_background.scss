@@ -18,8 +18,6 @@
     color: $color-neutral;
     font-size: 1.62rem;
     line-height: 2.62rem;
-    /*font-size: 2.75rem;
-    line-height: 3.75rem;*/
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -36,5 +34,22 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/background-tablet.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .background__gradient {
+    width: 1600px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .background__h1 {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
   }
 }

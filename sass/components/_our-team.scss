@@ -72,3 +72,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 768px) {
+  .our-team__container {
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 13.41%;
+    padding-left: 13.41%;
+  }
+}

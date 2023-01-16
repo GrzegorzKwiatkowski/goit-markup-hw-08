@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   margin: auto;
-  /*width: 1200px;*/
   padding-right: 30px;
   & ul {
     display: flex;
@@ -116,7 +115,7 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .logo {
+  .logo__padding {
     padding-right: 10.8%;
     padding-left: 1.9%;
   }
@@ -134,5 +133,14 @@
   .contacts__inside-padding {
     padding-left: 0px;
     padding-right: 1.9%;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding-right: 13.41%;
+    padding-left: 13.41%;
+  }
+  .logo__padding {
+    padding-right: 93px;
   }
 }
