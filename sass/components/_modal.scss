@@ -75,6 +75,8 @@
     letter-spacing: 0.03em;
     padding-top: 40px;
     padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin: 0px;
   }
   &__label {
@@ -194,14 +196,14 @@
     cursor: pointer;
     background-color: $color-main;
     border-radius: 2px;
+    right: 16px;
   }
   &__svg-icon {
-    position: absolute;
+    position: relative;
     border: 2px solid $color-modal-input-v2;
     width: 16px;
     height: 15px;
     border-radius: 3px;
-    left: 40px;
   }
   &__connector {
     display: flex;
