@@ -24,10 +24,15 @@
     text-align: center;
   }
   &--send {
-    margin-bottom: 40px;
   }
   &__svg-send {
-    margin-left: -50px;
-    margin-top: 12px;
+    position: absolute;
+    top: 20px;
+    right: 28px;
   }
+}
+.wut {
+  padding-top: 7px;
+  position: relative;
+  display: inline-block;
 }

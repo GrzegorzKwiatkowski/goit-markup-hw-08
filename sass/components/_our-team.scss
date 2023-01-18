@@ -2,8 +2,11 @@
   background: $color-svg-bg;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__container {
-    /*width: $width-container;*/
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -11,6 +14,14 @@
     padding-right: 15px;
     padding-left: 15px;
     list-style: none;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1200px;
+    }
   }
   &__heading {
     font-family: $fontFamily-roboto;
@@ -64,18 +75,5 @@
     background-color: $color-main;
     fill: $color-neutral;
     border-radius: 50%;
-  }
-}
-@media (min-width: 480px) {
-  .our-team__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 768px) {
-  .our-team__container {
-    grid-template-columns: repeat(4, 1fr);
-    padding-right: 13.41%;
-    padding-left: 13.41%;
   }
 }

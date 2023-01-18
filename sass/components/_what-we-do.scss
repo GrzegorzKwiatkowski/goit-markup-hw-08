@@ -1,8 +1,10 @@
 .about-us {
-  display: none;
-  visibility: hidden;
   padding-bottom: 94px;
   margin: auto;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 
   & h2 {
     font-weight: $fontWeight-big;
@@ -15,10 +17,13 @@
     margin: auto;
   }
   &__display {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     gap: 30px;
     position: relative;
     list-style: none;
+    height: 294px;
   }
   &__overlay {
     position: relative;
@@ -34,13 +39,5 @@
     font-family: $fontFamily-roboto;
     font-size: 0.875rem;
     line-height: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .about-us {
-    visibility: visible;
-  }
-  .about-us__display {
-    justify-content: center;
   }
 }

@@ -5,7 +5,9 @@
   display: flex;
   align-items: center;
   margin: auto;
-  padding-right: 30px;
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
   & ul {
     display: flex;
     align-items: center;
@@ -16,6 +18,10 @@
   }
 }
 .navigation {
+  padding-right: 15px;
+  @media (min-width: 1200px) {
+    padding-right: 0px;
+  }
   & a {
     font-weight: $fontWeight-normal;
     font-size: 0.875rem;
@@ -38,27 +44,37 @@
     &--studio::after {
       content: "";
       position: absolute;
-      width: 42px;
+      width: 53px;
       height: 4px;
       top: 44px;
       left: 0px;
       border-radius: 2px;
       background: $color-main;
+      @media (max-width: 1199px) {
+        top: 49px;
+      }
     }
     &--portfolio::after {
       content: "";
       position: absolute;
-      width: 57px;
+      width: 58px;
       height: 4px;
       top: 44px;
       left: 0px;
       border-radius: 2px;
       background: $color-main;
+      @media (max-width: 1199px) {
+        top: 49px;
+      }
     }
   }
   &__inside-padding {
-    padding-left: 57px;
-    padding-right: 69px;
+    padding-left: 60px;
+    padding-right: 60px;
+    @media (min-width: 1200px) {
+      padding-left: 46px;
+      padding-right: 46px;
+    }
   }
 }
 
@@ -73,7 +89,13 @@
     font-size: 1.625rem;
     line-height: 1.9rem;
     letter-spacing: 0.03em;
-    /*padding-right: 97px;*/
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 15px;
+      padding-right: 83px;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 93px;
+    }
   }
 }
 .contacts {
@@ -99,7 +121,9 @@
     right: 10px;
   }
   &__inside-padding {
-    padding-left: 50px;
+    @media (min-width: 1200px) {
+      padding-left: 50px;
+    }
   }
 }
 .navigation-line hr {
@@ -109,38 +133,29 @@
   bottom: 1px;
   z-index: -1;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .header {
     display: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .logo__padding {
-    padding-right: 10.8%;
-    padding-left: 1.9%;
   }
   .logo a {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
   .navigation__inside-padding {
-    padding-right: 13%;
-    padding-left: 13%;
   }
   .navigation.header__list-style {
     display: block;
   }
   .contacts__inside-padding {
-    padding-left: 0px;
-    padding-right: 1.9%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header {
-    padding-right: 13.41%;
-    padding-left: 13.41%;
   }
   .logo__padding {
-    padding-right: 93px;
   }
 }
