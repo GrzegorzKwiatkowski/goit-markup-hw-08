@@ -65,6 +65,8 @@
     }
   }
   &__h1 {
+    width: 90%;
+    margin: auto;
     font-family: $fontFamily-roboto;
     font-weight: $fontWeight-huge;
     color: $color-neutral;
@@ -73,7 +75,6 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0;
     padding-top: 106px;
     padding-bottom: 30px;
     @media (min-width: 769px) {
